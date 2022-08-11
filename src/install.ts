@@ -66,6 +66,7 @@ export const install: Install<Router | PluginOptions> = (
   ) => {
     let middlewares = [...globalMiddlewares]
     if ('middleware' in to.meta) {
+      console.log(typeof to.meta.middleware)
       if (typeof to.meta.middleware === 'object') {
         let ignores: Middleware[] = []
         if ('attach' in to.meta.middleware) {
