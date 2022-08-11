@@ -21,21 +21,20 @@
     "lint": "prettier --check src/**/*.ts",
     "lint:fix": "tslint --fix --project ./",
     "precommit": "npm run lint && tsc --noEmit && npm run type-check && npm run test",
-    "commit": "git-cz",
-    "prepare": "yarn build:component || npm run build:component"
+    "commit": "git-cz"
   },
   "devDependencies": {
     "@babel/cli": "7.10.0",
     "@babel/core": "7.10.0",
     "@babel/plugin-proposal-class-properties": "7.8.3",
     "@babel/plugin-proposal-numeric-separator": "7.8.3",
+    "@types/node": "13.13.9",
     "@babel/plugin-proposal-object-rest-spread": "7.10.0",
     "@babel/preset-env": "7.10.0",
     "@babel/preset-typescript": "7.9.0",
     "@types/jest": "25.2.3",
-    "@types/node": "13.13.9",
-    "commitizen": "4.1.2",
     "cz-conventional-changelog": "3.2.0",
+    "commitizen": "4.1.2",
     "ghooks": "2.0.4",
     "jest": "26.0.1",
     "prettier": "2.0.5",
@@ -45,8 +44,8 @@
     "tslint": "5.20.1",
     "tslint-config-prettier": "1.18.0",
     "tslint-plugin-prettier": "2.3.0",
-    "typescript": "3.9.3",
-    "vuepress": "1.5.0"
+    "vuepress": "1.5.0",
+    "typescript": "3.9.3"
   },
   "repository": {
     "type": "git",
